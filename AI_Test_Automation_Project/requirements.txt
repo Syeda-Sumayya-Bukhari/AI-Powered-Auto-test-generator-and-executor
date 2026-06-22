@@ -1,0 +1,11 @@
+openai>=1.30.0
+google-generativeai>=0.8.0
+requests>=2.32.0
+selenium>=4.21.0
+webdriver-manager>=4.0.2
+pytest>=8.2.0
+pytest-mock>=3.14.0
+python-dotenv>=1.0.1
+jinja2>=3.1.4
+# Optional web UI (Python 3.10–3.12): pip install streamlit
+# streamlit>=1.35.0

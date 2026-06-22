@@ -1,0 +1,27 @@
+{
+  "id": "saucedemo-login",
+  "version": "3.36.0",
+  "name": "Sauce Demo Login Test",
+  "url": "https://www.saucedemo.com/",
+  "tests": [
+    {
+      "id": "login-1",
+      "name": "Login with valid credentials",
+      "commands": [
+        { "command": "open", "target": "/", "value": "" },
+        { "command": "type", "target": "id=user-name", "value": "standard_user" },
+        { "command": "type", "target": "id=password", "value": "secret_sauce" },
+        { "command": "click", "target": "id=login-button", "value": "" },
+        { "command": "assertLocation", "target": "**/inventory.html", "value": "" }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "suite-1",
+      "name": "Default Suite",
+      "tests": ["login-1"]
+    }
+  ],
+  "urls": ["https://www.saucedemo.com/"]
+}
